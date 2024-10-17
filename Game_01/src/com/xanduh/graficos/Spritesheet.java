@@ -11,8 +11,7 @@ public class Spritesheet {
 
     public Spritesheet(String path) {
         try {
-            // Debug statement to print the file path
-            System.out.println("Loading spritesheet from: " + path);
+            //System.out.println("Loading spritesheet from: " + path);
             spritesheet = ImageIO.read(new File(path));
             if (spritesheet == null) {
                 throw new IllegalArgumentException("Spritesheet image not found at path: " + path);
